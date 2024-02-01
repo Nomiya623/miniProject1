@@ -39,8 +39,8 @@
                         a href=에 left sidebar로 열려서 category 제목에 코스메틱 리스트 출력(리스트1, 리스트 2 등) script -->
                     <li><a href="#topsellers">bestsellers</a></li>
                     <!-- topsellers 섹션으로 이동 -->
-                    <li><a href="aboutUs.html">about us</a></li>
-                    <!-- aboutUs.html 구성해서 이동 -->
+                    <li><a href="aboutUs.jsp">about us</a></li>
+                    <!-- aboutUs.jsp 구성해서 이동 -->
                 </ul>
                 <ul class="nav-menu">
                     <li>
@@ -52,10 +52,10 @@
                         -->
                     </li>
                     <li>
-                        <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+                        <a href="cart.jsp"><i class='bx bx-shopping-bag'></i></a>
                     </li>
                     <li>
-                        <a href="signIn.html"><i class='bx bx-user'></i></a>
+                        <a href="signInUp.jsp"><i class='bx bx-user'></i></a>
                     </li>
                 </ul>
             </div>
@@ -134,7 +134,7 @@
             <div class="col-8 slide-img-col">
                 <div class="slide-img-wrapper">
                     <div class="slide-img" id="slide-img">
-                        <!-- hero section 이미지, 텍스트 클릭시 notReady.html 페이지로 이동 
+                        <!-- hero section 이미지, 텍스트 클릭시 notFound.jsp 페이지로 이동 
                         페이지 내용: "준비 중입니다. 서비스 완료 후 다시 이용해주세요. 감사합니다."
                         -->
                         <img src="../images/banner/veganBg0.png" alt="">
@@ -159,7 +159,7 @@
     <!-- END HERO SECTION -->
 
     <!-- BANNER SECTION -->
-    <!-- banner section 이미지, 텍스트 클릭시 notReady.html 페이지로 이동 
+    <!-- banner section 이미지, 텍스트 클릭시 notFound.jsp 페이지로 이동 
     페이지 내용: "준비 중입니다. 서비스 완료 후 다시 이용해주세요. 감사합니다."
                         -->
     <div class="section">
@@ -213,8 +213,8 @@
     <!-- END BANNER SECTION -->
 
     <!-- NEW ARRIVAL SECTION -->
-    <!-- addtocart 이미지,텍스트 클릭시 cart.html 페이지로 이동;
-        view detail 클릭 시 notReady.html로 이동
+    <!-- addtocart 이미지,텍스트 클릭시 cart.jsp 페이지로 이동;
+        view detail 클릭 시 notFound.jsp로 이동
     페이지 내용: "준비 중입니다. 서비스 완료 후 다시 이용해주세요. 감사합니다."
                         -->
     <div class="section">

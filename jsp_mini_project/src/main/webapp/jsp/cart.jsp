@@ -19,7 +19,7 @@
                 <div class="block-heading">
                     <h2>장바구니</h2>
 
-                    <a href="main.html" class="btn btn-primary">Go Shopping</a>
+                    <a href="main.jsp" class="btn btn-primary">Go Shopping</a>
 
                 </div>
                 <div class="content">
