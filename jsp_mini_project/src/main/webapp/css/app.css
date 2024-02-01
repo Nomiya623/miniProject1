@@ -68,6 +68,12 @@ a {
     height: var(--logo-size);
 }
 
+.menu_area .menu_lst {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
 .nav-menu {
     list-style-type: none;
     display: flex;
