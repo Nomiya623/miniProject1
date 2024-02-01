@@ -19,7 +19,7 @@
             <p><strong>Age:</strong> <span id="age">23</span></p>
             <p><strong>Gender:</strong> <span id="gender">남성</span></p>
             <p><strong>SkinType:</strong> <span id="skinType">트러블성</span></p>
-            <button onclick="location.href='ally_user_update.jsp'">회원정보 변경</button>
+            <button onclick="location.href='userList_update.jsp'">회원정보 수정</button>
         </div>
 
         <div class="purchase-history">

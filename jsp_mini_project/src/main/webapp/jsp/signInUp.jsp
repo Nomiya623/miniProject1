@@ -61,7 +61,7 @@
 		</div>
 		<div class="container" id="container">
 			<div class="form-container sign-in-container">
-				<form name="join" action="signIn_view.jsp" method="POST">
+				<form name="join" action="signIn_process.jsp" method="POST">
 					<h1>로그인</h1>
 					<div class="social-container">
 						<a
@@ -75,9 +75,9 @@
 							target="_blank"><i class="fab fa-naver-n"></i> <img
 							src="../images/logos/naver.png" alt="Naver" /></a>
 					</div>
-					<span>또는 계정을 사용하세요</span> <input type="userId" placeholder="ID"
-						required /> <input type="password" placeholder="비밀번호" required />
-					<a href="#">비밀번호를 잊으셨나요?</a>
+					<span>또는 계정을 사용하세요</span> <input type="text" name="userId"
+						placeholder="ID" required /> <input type="password" name="pwd"
+						placeholder="비밀번호" required /> <a href="#">비밀번호를 잊으셨나요?</a>
 					<button type="submit">로그인</button>
 				</form>
 			</div>
