@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page import="javax.servlet.http.HttpSession"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,6 +83,20 @@ tr:hover {
 </head>
 <body>
 	<%@ include file="../db/dbconn.jsp"%>
+	  <% String role = null;
+        if (session != null && session.getAttribute("loggedin") != null) {
+            role = (String) session.getAttribute("role");
+            if(!"A".equals(role)) { // If not admin, redirect
+                response.sendRedirect("signInUp.jsp");
+                return;
+            }
+        } else {
+            // No session found, redirect to login
+            response.sendRedirect("signInUp.jsp");
+            return;
+        }
+    %>
+	
 	<%
 
     String status = request.getParameter("status");
@@ -117,8 +131,13 @@ tr:hover {
 	
 	
 	%>
-
-
+	<div class="sidebar">
+        <a href="main.jsp">Home</a>
+        <a href="orders.jsp">Orders</a>
+        <a href="products.jsp">Products</a>
+        <a href="#" onclick="signOut()">Sign Out</a>
+    </div>
+	
 	<table border="1">
 		<tr>
 			<th>사용자 ID</th>
@@ -179,5 +198,12 @@ tr:hover {
 			location.href = "userList_reset.jsp?userId=" + userId; 
 		}
 	}
+	
+	
+	function signOut() {
+        if(confirm("Are you sure you want to sign out?")) {
+            window.location.href = "signOut.jsp";
+        }
+    }
 </script>
 

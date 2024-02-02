@@ -62,9 +62,9 @@
 				</ul>
 				<ul class="nav-menu">
 					 <% if(isLoggedIn) { %>
-                        <li><a href="#"><i class='bx bx-user'></i> <%= welcomeMessage %></a></li>
+                        <li><i class='bx bx-user'></i> <%= welcomeMessage %></li>
                         <% if("A".equals(session.getAttribute("role"))) { %>
-                            <li><a href="userList.jsp">User List</a></li>
+                            <li><a href="userList.jsp">Admin Page</a></li>
                         <% } else { %>
                             <li><a href="myPage.jsp">My Page</a></li>
                         <% } %>
