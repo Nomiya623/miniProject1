@@ -20,6 +20,7 @@
             <p><strong>Gender:</strong> <span id="gender">남성</span></p>
             <p><strong>SkinType:</strong> <span id="skinType">트러블성</span></p>
             <button onclick="location.href='userList_update.jsp'">회원정보 수정</button>
+            <button onclick="location.href='signOut_view.jsp'">회원 탈퇴</button>
         </div>
 
         <div class="purchase-history">

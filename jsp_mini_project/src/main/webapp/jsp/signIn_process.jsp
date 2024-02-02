@@ -2,47 +2,47 @@
 <%@ page import="java.sql.*"%>
 <%@ page import="javax.servlet.ServletException"%>
 <%@ page import="java.net.URLEncoder"%>
-<%@ include file="../db/dbconn.jsp"%> 
+<%@ include file="../db/dbconn.jsp"%>
 
 <%
-String userId = request.getParameter("userId");
-String pwd = request.getParameter("pwd"); // Ensure the name 'pwd' matches your form's password field name
-
+PreparedStatement pstmt = null; // Ensure pstmt is declared outside the try block
+ResultSet rs = null; // Also declare ResultSet here for proper scope
 try {
-    
-    String sql = "SELECT role FROM ally_users WHERE userId = ? AND password = ?";
-    
-    try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
-        pstmt.setString(1, userId);
-        pstmt.setString(2, pwd);
-        
-        try (ResultSet rs = pstmt.executeQuery()) {
-            if (rs.next()) {
-                String userRole = rs.getString("role");
-                
-                if ("admin".equalsIgnoreCase(userRole)) {
-                    response.sendRedirect("userList.jsp");
-                } else {
-                    
-                    response.sendRedirect("signIn_view.jsp?userId=" + URLEncoder.encode(userId, "UTF-8"));
-                }
-            } else {
-               
-                out.println("<script>alert('Invalid username or password.'); history.back();</script>");
-            }
-        } 
-    } 
-} catch (SQLException e) {
-    throw new ServletException("DB error: " + e.getMessage(), e);
-} catch (Exception e) {
-    throw new ServletException("Error: " + e.getMessage(), e);
-} finally {
-    if (conn != null) {
-        try {
-            conn.close(); 
-        } catch (SQLException ex) {
-            ex.printStackTrace();
+    String userId = request.getParameter("userId");
+    String password = request.getParameter("pwd"); // Reminder: hashing should be used in real applications
+    String sql = "SELECT role, password FROM ally_users WHERE userId = ?";
+    pstmt = conn.prepareStatement(sql);
+    pstmt.setString(1, userId);
+
+    rs = pstmt.executeQuery();
+    if (rs.next()) {
+        String storedPassword = rs.getString("password");
+        String userRole = rs.getString("role");
+
+        boolean passwordMatch = password.equals(storedPassword); // This should be replaced with a proper password verification mechanism
+
+        if (passwordMatch) {
+            session.setAttribute("userId", userId);
+            session.setAttribute("loggedin", true);
+            session.setAttribute("role", userRole);
+            
+            String redirectPage = "main.jsp"; // Change as needed
+            response.sendRedirect(redirectPage);
+        } else {
+            response.sendRedirect("signInUp.jsp?message=" + URLEncoder.encode("Invalid username or password.", "UTF-8"));
         }
+    } else {
+        response.sendRedirect("signInUp.jsp?message=" + URLEncoder.encode("Invalid username or password.", "UTF-8"));
     }
+} catch (SQLException e) {
+    e.printStackTrace(); // Log or handle the SQL exception
+    response.sendRedirect("signInUp.jsp?message=" + URLEncoder.encode("Database error occurred.", "UTF-8"));
+} catch (Exception e) {
+    e.printStackTrace(); // Log or handle the general exception
+    response.sendRedirect("signInUp.jsp?message=" + URLEncoder.encode("An error occurred.", "UTF-8"));
+} finally {
+    if (rs != null) try { rs.close(); } catch(SQLException ex) {}
+    if (pstmt != null) try { pstmt.close(); } catch(SQLException ex) {}
+    if (conn != null) try { conn.close(); } catch(SQLException ex) {}
 }
 %>

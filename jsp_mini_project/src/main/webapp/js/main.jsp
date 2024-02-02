@@ -27,21 +27,20 @@
 </head>
 
 <body>
-<<body>
-    <%
-        HttpSession s = request.getSession(false); // Get existing session
-        String welcomeMessage = "";
-        boolean isLoggedIn = session != null && session.getAttribute("loggedin") != null;
-        if(isLoggedIn) {
-            String role = (String) session.getAttribute("role");
-            String userId = (String) session.getAttribute("userId");
-            if("A".equals(role)) {
-                welcomeMessage = "Admin, 환영합니다!";
-            } else {
-                welcomeMessage = userId + "님, 환영합니다!";
-            }
+<%
+    HttpSession s = request.getSession(false); // Get existing session
+    if(session != null && session.getAttribute("loggedin") != null) {
+        String role = (String) session.getAttribute("role");
+        if("A".equals(role)) {
+            // Special admin content
+        } else if("B".equals(role)) {
+            // Regular user content
         }
-    %>
+    } else {
+        // Redirect to login page if not logged in
+        response.sendRedirect("signInUp.jsp");
+    }
+%>
 	<!-- NAV -->
 	<div class="nav-wrapper">
 		<div class="container-fluid">
@@ -61,16 +60,11 @@
 					<!-- aboutUs.jsp 구성해서 이동 -->
 				</ul>
 				<ul class="nav-menu">
-					 <% if(isLoggedIn) { %>
-                        <li><a href="#"><i class='bx bx-user'></i> <%= welcomeMessage %></a></li>
-                        <% if("A".equals(session.getAttribute("role"))) { %>
-                            <li><a href="userList.jsp">User List</a></li>
-                        <% } else { %>
-                            <li><a href="myPage.jsp">My Page</a></li>
-                        <% } %>
-                    <% } else { %>
-                        <li><a href="signInUp.jsp"><i class='bx bx-user'></i></a></li>
-                    <% } %>
+					<li><a href="#"><i class='bx bx-search'></i></a> <!-- bx-search 클릭 시 search input bar 표시,
+                        화면 밖 클릭 시 사라짐 script animate,
+                        search input bar 에 검색창 %like keyword 추가,
+                        검색 리스트에 없을 시 '검색된 결과가 없습니다' 출력
+                        --></li>
 					<li><a href="cart.jsp"><i class='bx bx-shopping-bag'></i></a>
 					</li>
 					<li><a href="signInUp.jsp"><i class='bx bx-user'></i>  </a></li>
