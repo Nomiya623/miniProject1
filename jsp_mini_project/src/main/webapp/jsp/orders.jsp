@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*"%>
-<%@ include file="../db/dbconn.jsp"%> 
+<%@ include file="../db/dbconn.jsp"%>
 
 <!DOCTYPE html>
 <html>
@@ -37,12 +37,14 @@
                                "FROM ALLY_PURCHASE_HISTORY h " +
                                "JOIN ALLY_PRODUCTS p ON h.ITEMID = p.ITEMID " +
                                "ORDER BY h.PURCHASEDATE DESC";
+                PreparedStatement pstmt = null;
+                ResultSet rs = null;
                 try {
-                    PreparedStatement pstmt = conn.prepareStatement(query);
-                    ResultSet rs = pstmt.executeQuery();
+                    pstmt = conn.prepareStatement(query);
+                    rs = pstmt.executeQuery();
 
                     while(rs.next()) {
-                        %>
+            %>
                         <tr>
                             <td><%= rs.getString("PURCHASEID") %></td>
                             <td><%= rs.getString("USERID") %></td>
@@ -51,12 +53,14 @@
                             <td><%= rs.getString("PRODUCT_TYPE") %></td>
                             <td><%= rs.getDouble("AMOUNT") %></td>
                         </tr>
-                        <%
+            <%
                     }
                 } catch(SQLException e) {
                     out.println("SQL Exception: " + e.getMessage());
                 } finally {
-                    try { if(conn != null) conn.close(); } catch(Exception e) { /* Ignored */ }
+                    if (rs != null) try { rs.close(); } catch(SQLException e) { e.printStackTrace(); }
+                    if (pstmt != null) try { pstmt.close(); } catch(SQLException e) { e.printStackTrace(); }
+                    if (conn != null) try { conn.close(); } catch(SQLException e) { e.printStackTrace(); }
                 }
             %>
         </tbody>

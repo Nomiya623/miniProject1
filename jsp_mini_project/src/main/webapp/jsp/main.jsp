@@ -44,7 +44,7 @@
 					<li><a href="javascript:void(0)"
 						onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Home</a></li>
 					<li><a href="notFound.jsp">Category</a></li>
-					<li><a href="feedback.jsp">Feedbacks</a></li>
+					<li><a href="notFound.jsp">Feedbacks</a></li>
 					<li><a href="notFound.jsp">About Us</a></li>
 				</ul>
 				<ul class="nav-menu">
