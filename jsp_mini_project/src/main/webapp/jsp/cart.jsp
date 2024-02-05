@@ -19,7 +19,7 @@
                 <div class="block-heading">
                     <h2>장바구니</h2>
 
-                    <a href="main.jsp" class="btn btn-primary">Go Shopping</a>
+                    <a href="main.jsp" class="btn btn-primary">쇼핑하러 가기</a>
 
                 </div>
                 <div class="content">
@@ -37,7 +37,7 @@
                                                 <div class="row">
                                                     <div class="col-md-5 product-name">
                                                         <div class="product-name">
-                                                            <a href="#">Product1</a>
+                                                            <a href="#">제품1</a>
                                                             <div class="product-info">
                                                                 <div>기능: <span class="value">설명</span></div>
                                                                 <div>기능: <span class="value">설명</span></div>
@@ -70,7 +70,7 @@
                                                     <div class="col-md-5 product-name">
                                                         <div class="product-name">
 
-                                                            <a href="#">Product2
+                                                            <a href="#">제품2
                                                             </a>
                                                             <div class="product-info">
                                                                 <div>기능: <span class="value">설명</span></div>
@@ -102,7 +102,7 @@
                                                 <div class="row">
                                                     <div class="col-md-5 product-name">
                                                         <div class="product-name">
-                                                            <a href="#">Product3</a>
+                                                            <a href="#">제품3</a>
                                                             <div class="product-info">
                                                                 <div>기능: <span class="value">설명</span></div>
                                                                 <div>기능: <span class="value">설명</span></div>
