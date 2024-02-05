@@ -46,4 +46,4 @@
 
 
 getParameter userId+ 
-join ally_purchase_history userId
+join 	ally_purchase_history userId
