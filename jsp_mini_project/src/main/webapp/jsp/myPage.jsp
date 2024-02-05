@@ -47,3 +47,4 @@
 
 getParameter userId+ 
 join ally_purchase_history userId
+test
