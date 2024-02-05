@@ -27,53 +27,55 @@
 </head>
 
 <body>
-<<body>
-    <%
-        HttpSession s = request.getSession(false); // Get existing session
-        String welcomeMessage = "";
-        boolean isLoggedIn = session != null && session.getAttribute("loggedin") != null;
-        if(isLoggedIn) {
-            String role = (String) session.getAttribute("role");
-            String userId = (String) session.getAttribute("userId");
-            if("A".equals(role)) {
-                welcomeMessage = "Admin, 환영합니다!";
-            } else {
-                welcomeMessage = userId + "님, 환영합니다!";
-            }
-        }
-    %>
+<body>
+	<%
+	HttpSession s = request.getSession(false);
+	String welcomeMessage = "";
+	boolean isLoggedIn = session != null && session.getAttribute("loggedin") != null;
+	%>
 	<!-- NAV -->
 	<div class="nav-wrapper">
 		<div class="container-fluid">
 			<div class="nav">
 				<a href="#" class="logo"> <img src="../images/logos/logo.png"
-					alt="">
+					alt="Logo">
 				</a>
 				<ul class="nav-menu menu-main">
 					<li><a href="javascript:void(0)"
-						onclick="window.scrollTo({top: 0, behavior: 'smooth'});">home</a></li>
-					<li><a href="javascript:void(0)" onclick="toggleSidebar()">category</a></li>
-					<!-- left sidebar 맨위에 =표시, category 텍스트 표시
-                        a href=에 left sidebar로 열려서 category 제목에 코스메틱 리스트 출력(리스트1, 리스트 2 등) script -->
-					<li><a href="feedback.jsp">feedbacks</a></li>
-					<!-- topsellers 섹션으로 이동 -->
-					<li><a href="aboutUs.jsp">about us</a></li>
-					<!-- aboutUs.jsp 구성해서 이동 -->
+						onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Home</a></li>
+					<li><a href="notFound.jsp">Category</a></li>
+					<li><a href="feedback.jsp">Feedbacks</a></li>
+					<li><a href="notFound.jsp">About Us</a></li>
 				</ul>
 				<ul class="nav-menu">
-					 <% if(isLoggedIn) { %>
-                        <li><i class='bx bx-user'></i> <%= welcomeMessage %></li>
-                        <% if("A".equals(session.getAttribute("role"))) { %>
-                            <li><a href="userList.jsp">Admin Page</a></li>
-                        <% } else { %>
-                            <li><a href="myPage.jsp">My Page</a></li>
-                        <% } %>
-                    <% } else { %>
-                        <li><a href="signInUp.jsp"><i class='bx bx-user'></i></a></li>
-                    <% } %>
-					<li><a href="cart.jsp"><i class='bx bx-shopping-bag'></i></a>
-					</li>
-					<li><a href="signInUp.jsp"><i class='bx bx-user'></i>  </a></li>
+					<%
+					if (isLoggedIn) {
+						String role = (String) session.getAttribute("role");
+						String userId = (String) session.getAttribute("userId");
+						welcomeMessage = "A".equals(role) ? "Admin, <br>환영합니다!" : userId + "님, <br>환영합니다!";
+					%>
+					<li><i class='bx bx-user'></i> <%=welcomeMessage%></li>
+					<%
+					if ("A".equals(role)) {
+					%>
+					<li><a href="userList.jsp">Admin Page</a></li>
+					<%
+					} else {
+					%>
+					<li><a href="myPage.jsp">My Page</a></li>
+					<%
+					}
+					%>
+					<li><a href="signOut.jsp"><i class='bx bx-log-out'></i>
+							Logout</a></li>
+					<%
+					} else {
+					%>
+					<li><a href="signInUp.jsp"><i class='bx bx-user'></i></a></li>
+					<%
+					}
+					%>
+					<li><a href="cart.jsp"><i class='bx bx-shopping-bag'></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -773,7 +775,7 @@
 </html>
 <script>
 	function toggleSidebar() {
-		var sidebar = document.getElementById("sidebar"); // Replace with your sidebar's ID
+		var sidebar = document.getElementById("sidebar");//추후 추가 필요 시 추가
 		sidebar.style.display = (sidebar.style.display === "none" ? "block"
 				: "none");
 	}

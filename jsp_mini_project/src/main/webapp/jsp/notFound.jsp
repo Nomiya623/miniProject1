@@ -1,9 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	
 <!DOCTYPE html>
 <html>
 
 <head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <meta charset="UTF-8">
 <title>Sorry, page is not found</title>
 <style>
@@ -13,8 +15,7 @@ url(
 rel
 ="stylesheet");
 @import
-	url("https://fonts.googleapis.com/css?family=Roboto:400,500,600,700")
-	;
+	url("https://fonts.googleapis.com/css?family=Roboto:400,500,600,700");
 
 * {
 	margin: 0;
@@ -59,13 +60,13 @@ body {
 	.right-down {
 	width: 10vmin;
 	height: 10vmin;
-	background-color: #f3c623;
+	background-color: #6b8e23;
 	position: absolute;
 }
 
 .cog2 .top, .cog2  .down, .cog2  .left, .cog2  .right, .cog2  .left-top,
 	.cog2  .left-down, .cog2  .right-top, .cog2  .right-down {
-	background-color: #4f8a8b;
+	background-color: #3c3c3b;
 }
 
 .top {
@@ -174,12 +175,13 @@ h1 {
 			</div>
 		</div>
 		<h1 class="second-four">4</h1>
-		<p class="wrong-para">Uh Oh! Page not found!</p>
+		<p class="wrong-para">준비 중입니다. 조금만 기다려주세요.</p>
 	</div>
 </body>
 </html>
 
 <script>
+
 	let t1 = gsap.timeline();
 	let t2 = gsap.timeline();
 	let t3 = gsap.timeline();

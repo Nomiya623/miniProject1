@@ -37,17 +37,18 @@
 						확인</button>
 				</div>
 
-				<input type="email" placeholder="이메일" name="email" /> <input
+				<input type="email" placeholder="이메일" name="email" required /> <input
 					type="password" placeholder="비밀번호 (1-9, A-Z)"
 					pattern="[A-Za-z0-9]{1,}"
 					title="Password should contain numbers and letters only."
-					name="password" /> <input type="text" placeholder="이름"
-					name="fullName" /> <input type="number" placeholder="나이" min="1"
-					max="100" name="age" /> <select name="gender" id="gender">
+					name="password" required /> <input type="text" placeholder="이름"
+					name="fullName" required /> <input type="number" placeholder="나이"
+					min="1" max="100" name="age" required /> <select name="gender"
+					id="gender" required>
 					<option value="">성별 선택</option>
-					<option value="male">남성</option>
-					<option value="female">여성</option>
-					<option value="other">기타</option>
+					<option value="남성">남성</option>
+					<option value="여성">여성</option>	
+					<option value="기타">기타</option>
 				</select> <select name="skinType" id="skinType">
 					<option value="">피부 타입 선택</option>
 					<option value="dry">건성</option>
@@ -78,7 +79,7 @@
 					</div>
 					<span>또는 계정을 사용하세요</span> <input type="text" name="userId"
 						placeholder="ID" required /> <input type="password" name="pwd"
-						placeholder="비밀번호" required /> <a href="#">비밀번호를 잊으셨나요?</a>
+						placeholder="비밀번호" required /> <a href="findPassword.jsp">비밀번호를 잊으셨나요?</a>
 					<button type="submit">로그인</button>
 				</form>
 			</div>
@@ -87,8 +88,7 @@
 					<div class="overlay-panel overlay-left">
 						<h1>다시 오신 것을 환영합니다!</h1>
 						<p>저희와 연결되어 있으려면 개인 정보로 로그인하세요</p>
-						<button class="ghost" id="
-">로그인</button>
+						<button class="ghost" id="">로그인</button>
 					</div>
 					<div class="overlay-panel overlay-right">
 						<h1>안녕하세요!</h1>
@@ -117,7 +117,8 @@ function idCheck() {
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
     const container = document.getElementById('container');
-	
+
+        
     signUpButton.addEventListener('click', () => {
         container.classList.add("right-panel-active");
     });

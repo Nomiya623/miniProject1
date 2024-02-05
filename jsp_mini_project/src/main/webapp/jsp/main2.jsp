@@ -73,7 +73,7 @@
                     <% } %>
 					<li><a href="cart.jsp"><i class='bx bx-shopping-bag'></i></a>
 					</li>
-					<li><a href="signInUp.jsp"><i class='bx bx-user'></i>  </a></li>
+					<!-- <li><a href="signInUp.jsp"><i class='bx bx-user'></i>  </a></li> -->
 				</ul>
 			</div>
 		</div>
