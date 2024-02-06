@@ -5,6 +5,7 @@
 <%@ include file="../db/dbconn.jsp"%>
 
 <%
+
 PreparedStatement pstmt = null; 
 ResultSet rs = null;
 try {
@@ -22,6 +23,7 @@ try {
         boolean passwordMatch = password.equals(storedPassword); 
 
         if (passwordMatch) {
+        	HttpSession s= request.getSession();
             session.setAttribute("userId", userId);
             session.setAttribute("loggedin", true);
             session.setAttribute("role", userRole);
@@ -30,11 +32,13 @@ try {
             response.sendRedirect(redirectPage);
         } else {
             // 비밀번호 불일치 시
-            response.sendRedirect("signInUp.jsp?message=" + URLEncoder.encode("잘못된 사용자 이름 또는 비밀번호입니다.", "UTF-8"));
+            String loginError = "잘못된 사용자 이름 또는 비밀번호입니다.";
+            response.sendRedirect("signInUp.jsp?loginError=" + java.net.URLEncoder.encode(loginError, "UTF-8"));
         }
     } else {
+    	String loginError = "잘못된 사용자 이름 또는 비밀번호입니다.";
         // 사용자가 존재하지 않을 때
-        response.sendRedirect("signInUp.jsp?message=" + URLEncoder.encode("잘못된 사용자 이름 또는 비밀번호입니다.", "UTF-8"));
+    	response.sendRedirect("signInUp.jsp?loginError=" + java.net.URLEncoder.encode(loginError, "UTF-8"));
     }
 } catch (SQLException e) {
     e.printStackTrace();

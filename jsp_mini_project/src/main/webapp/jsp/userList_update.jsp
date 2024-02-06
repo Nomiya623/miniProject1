@@ -38,7 +38,7 @@ try {
         <input type="submit" value="Update" />
     </form>
 <% } else { %>
-    <p>User not found or userId is missing.</p>
+    <p>사용자를 찾을 수 없거나 사용자 ID가 누락되었습니다.</p>
 <% }
    if(conn != null) {
        try { conn.close(); } catch(SQLException e) { e.printStackTrace(); }

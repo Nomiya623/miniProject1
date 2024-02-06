@@ -15,7 +15,7 @@
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
-        // Sample SQL query. Replace with actual query to fetch password
+        
         String sql = "SELECT PASSWORD FROM ALLY_USERS WHERE USERID = ? OR EMAIL = ?";
 
         try {
@@ -26,11 +26,12 @@
 
             if (rs.next()) {
                 String password = rs.getString("PASSWORD");
-                // Displaying password directly on the page, which is highly discouraged in real applications
-                out.println("<p>Your password (for demonstration purposes only): " + password + "</p>");
+               
+                out.println("<p>귀하의 비밀번호 (데모 목적으로만): " + password + "</p>");
             } else {
-                out.println("<p>User not found. Please check your input and try again.</p>");
+                out.println("<p>사용자를 찾을 수 없습니다. 입력 내용을 확인하고 다시 시도해주세요.</p>");
             }
+            
         } catch (SQLException e) {
             out.println("SQL Error: " + e.getMessage());
         } finally {

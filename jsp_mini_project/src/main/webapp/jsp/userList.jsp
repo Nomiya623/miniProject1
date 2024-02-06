@@ -5,9 +5,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin page</title>
-<style>
-
-</style>
 
 </head>
 <body>

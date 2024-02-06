@@ -47,7 +47,7 @@
 					id="gender" required>
 					<option value="">성별 선택</option>
 					<option value="남성">남성</option>
-					<option value="여성">여성</option>	
+					<option value="여성">여성</option>
 					<option value="기타">기타</option>
 				</select> <select name="skinType" id="skinType">
 					<option value="">피부 타입 선택</option>
@@ -63,6 +63,7 @@
 		</div>
 		<div class="container" id="container">
 			<div class="form-container sign-in-container">
+
 				<form name="join" action="signIn_process.jsp" method="POST">
 					<h1>로그인</h1>
 					<div class="social-container">
@@ -79,7 +80,16 @@
 					</div>
 					<span>또는 계정을 사용하세요</span> <input type="text" name="userId"
 						placeholder="ID" required /> <input type="password" name="pwd"
-						placeholder="비밀번호" required /> <a href="findPassword.jsp">비밀번호를 잊으셨나요?</a>
+						placeholder="비밀번호" required /> <a href="findPassword.jsp">비밀번호를
+						잊으셨나요?</a>
+					<%
+					String loginError = request.getParameter("loginError");
+					if (loginError != null && !loginError.isEmpty()) {
+					%>
+					<div style="color: red; font-size: 12px"><%=loginError%></div>
+					<%
+					}
+					%>
 					<button type="submit">로그인</button>
 				</form>
 			</div>

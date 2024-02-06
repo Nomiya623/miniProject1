@@ -126,17 +126,13 @@
                         </div>
                         <div class="col-md-12 col-lg-4">
                             <div class="summary">
-                                <h3>Summary</h3>
-                                <div class="summary-item"><span class="text">Subtotal</span><span
-                                        class="price">42,000원</span></div>
-                                <div class="summary-item"><span class="text">Discount</span><span
-                                        class="price">$0</span></div>
-                                <div class="summary-item"><span class="text">Shipping</span><span
-                                        class="price">$0</span></div>
-                                <div class="summary-item"><span class="text">Total</span><span
-                                        class="price">42,000원</span>
+                                <h3>요약</h3>
+                                <div class="summary-item"><span class="text">소계</span><span class="price">42,000원</span></div>
+                                <div class="summary-item"><span class="text">할인</span><span class="price">0원</span></div>
+                                <div class="summary-item"><span class="text">배송비</span><span class="price">무료</span></div>
+                                <div class="summary-item"><span class="text">총계</span><span class="price">42,000원</span></div>
                                 </div>
-                                <button type="button" class="btn btn-primary btn-lg btn-block">Checkout</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block">결제하러 가기</button>
                             </div>
                         </div>
                     </div>

@@ -221,11 +221,11 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/Tom-Ford-RUBY-RUSH.png"
-										data-img-2="../images/products/Tom-Ford-RUBY-RUSH-2.png">
+										data-img-1="../images/products/beautiful-eucalyptus-with-beauty-products (1).jpg"
+										data-img-2="../images/products/beautiful-eucalyptus-with-beauty-products (2).jpg">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=1" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=1" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<a href="#" class="product-info">
@@ -248,11 +248,38 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/christianlouboutin-rougelouboutin-velvet-matte.png"
-										data-img-2="../images/products/christianlouboutin-rougelouboutin-velvet-matte-1.png">
+										data-img-1="../images/products/vegan4.png"
+										data-img-2="../images/products/beautiful-eucalyptus-with-beauty-products (2).jpg">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=2" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=2" class="btn">상세 보기</a>
+										</div>
+									</div>
+									<div class="product-info">
+										<div class="product-brand">
+											<span>아이크림</span>
+											<div class="rating">
+												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
+													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
+													class='bx bxs-star-half'></i>
+											</div>
+										</div>
+										<div class="product-name">다크 서클 감소</div>
+										<div class="product-price">
+											<del>44,988원</del>
+											<span class="main-color">35,988원</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="product">
+									<div class="product-img"
+										data-img-1="../images/products/beautiful-eucalyptus-with-beauty-products (3).jpg"
+										data-img-2="../images/products/beautiful-eucalyptus-with-beauty-products (4).jpg">
+										<div class="product-action">
+											<a href="addToCart.jsp?itemid=3" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=3" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<div class="product-info">
@@ -266,7 +293,7 @@
 										</div>
 										<div class="product-name">비타민 E가 함유된 보습</div>
 										<div class="product-price">
-											<del>14,988원</del>
+											<del>20,100원</del>
 											<span class="main-color">11,988원</span>
 										</div>
 									</div>
@@ -275,26 +302,26 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/son-gucci-505-Janet-Rust-Mat-Lipstick.png"
-										data-img-2="../images/products/son-gucci-505-Janet-Rust-Mat-Lipstick-2.png">
+										data-img-1="../images/products/beautiful-eucalyptus-with-beauty-products (5).jpg"
+										data-img-2="../images/products/beautiful-eucalyptus-with-beauty-products (6).jpg">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=4" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=4" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<div class="product-info">
 										<div class="product-brand">
-											<span>블러쉬</span>
+											<span>파운데이션</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star-half'></i>
 											</div>
 										</div>
-										<div class="product-name">모든 피부 톤에 자연스러운 모양</div>
+										<div class="product-name">완전한 커버리지, 메트 마감</div>
 										<div class="product-price">
-											<del>30,100원</del>
-											<span class="main-color">27,588원</span>
+											<del>14,388원</del>
+											<span class="main-color">11,988원</span>
 										</div>
 									</div>
 								</div>
@@ -302,53 +329,26 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/son-kem-ysl-425.png"
-										data-img-2="../images/products/son-kem-ysl-425-2.png">
+										data-img-1="../images/products/beautiful-eucalyptus-with-beauty-products (6).jpg"
+										data-img-2="../images/products/beautiful-eucalyptus-with-beauty-products (5).jpg">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=5" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=5" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<div class="product-info">
 										<div class="product-brand">
-											<span>클렌저</span>
+											<span>페이스 세럼</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star-half'></i>
 											</div>
 										</div>
-										<div class="product-name">민감한 피부에 적합한 순함</div>
+										<div class="product-name">히알루론산이 함유된 안티에이징</div>
 										<div class="product-price">
-											<del>24,388원</del>
-											<span class="main-color">20,388원</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="product">
-									<div class="product-img"
-										data-img-1="../images/products/Son-Dior-Rouge-634-Strong-Matte.png"
-										data-img-2="../images/products/Son-Dior-Rouge-634-Strong-Matte-2.png">
-										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
-										</div>
-									</div>
-									<div class="product-info">
-										<div class="product-brand">
-											<span>토너</span>
-											<div class="rating">
-												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
-													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
-													class='bx bxs-star-half'></i>
-											</div>
-										</div>
-										<div class="product-name">알코올 무함유, 균형잡힌</div>
-										<div class="product-price">
-											<del>23,588원</del>
-											<span class="main-color">20,588원</span>
+											<del>63,588원</del>
+											<span class="main-color">59,988원</span>
 										</div>
 									</div>
 								</div>
@@ -384,26 +384,26 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/son-kem-ysl-425.png"
-										data-img-2="../images/products/son-kem-ysl-425-2.png">
+										data-img-1="../images/products/vegan0.png"
+										data-img-2="../images/products/vegan1.png">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=6" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=6" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<div class="product-info">
 										<div class="product-brand">
-											<span>핸드 크림</span>
+											<span>선크림</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star-half'></i>
 											</div>
 										</div>
-										<div class="product-name">영양 공급, 빠른 흡수</div>
+										<div class="product-name">SPF 50, 방수 기능</div>
 										<div class="product-price">
-											<del>18,788원</del>
-											<span class="main-color">16,788원</span>
+											<del>32,988원</del>
+											<span class="main-color">29,988원</span>
 										</div>
 									</div>
 								</div>
@@ -411,55 +411,55 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/christianlouboutin-rougelouboutin-velvet-matte.png"
-										data-img-2="../images/products/christianlouboutin-rougelouboutin-velvet-matte-1.png">
+										data-img-1="../images/products/vegan1.png"
+										data-img-2="../images/products/vegan2.png">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=7" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=7" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<div class="product-info">
 										<div class="product-brand">
-											<span>바디 워시</span>
+											<span>마스카라</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star-half'></i>
 											</div>
 										</div>
-										<div class="product-name">필수 오일이 함유된 상쾌함</div>
+										<div class="product-name">길어지는 효과, 방수</div>
 										<div class="product-price">
 											<del>24,788원</del>
-											<span class="main-color">22,788원</span>
+											<span class="main-color">17,988원</span>
 										</div>
 									</div>
 								</div>
 							</li>
 							<li class="glide__slide">
 								<div class="product">
-									<!-- <a href="" style="display: inline-block;"> -->
+
 									<div class="product-img"
-										data-img-1="../images/products/Tom-Ford-RUBY-RUSH.png"
-										data-img-2="../images/products/Tom-Ford-RUBY-RUSH-2.png">
+										data-img-1="../images/products/vegan2.png"
+										data-img-2="../images/products/vegan3.png">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=8" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=8" class="btn">상세 보기</a>
 										</div>
 									</div>
-									<!-- </a> -->
+									
 									<a href="#" class="product-info">
 										<div class="product-brand">
-											<span>컨디셔너</span>
+											<span>블러쉬</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star-half'></i>
 											</div>
 										</div>
-										<div class="product-name">아르간 오일이 함유된 보습</div>
+										<div class="product-name">모든 피부 톤에 자연스러운 모양</div>
 										<div class="product-price">
 											<del>28,388원</del>
-											<span class="main-color">26,388</span>
+											<span class="main-color">27,588</span>
 										</div>
 									</a href="#">
 								</div>
@@ -467,26 +467,26 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/son-gucci-505-Janet-Rust-Mat-Lipstick.png"
-										data-img-2="../images/products/son-gucci-505-Janet-Rust-Mat-Lipstick-2.png">
+										data-img-1="../images/products/vegan3.png"
+										data-img-2="../images/products/vegan4.png">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=9" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=9" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<div class="product-info">
 										<div class="product-brand">
-											<span>헤어 세럼</span>
+											<span>아이라이너</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star-half'></i>
 											</div>
 										</div>
-										<div class="product-name">케라틴이 함유된 곱슬 방지</div>
+										<div class="product-name">번짐 방지, 롱 래스팅</div>
 										<div class="product-price">
-											<del>30,788원</del>
-											<span class="main-color">28,788원</span>
+											<del>20,788원</del>
+											<span class="main-color">15,588원</span>
 										</div>
 									</div>
 								</div>
@@ -526,7 +526,7 @@
 						tenetur nam quidem reprehenderit culpa explicabo quisquam.</p>
 					<a href="#" class="btn btn-lg">shop now</a>
 					<div class="special-product-img"
-						style="background-image: url(../images/products/foundation-product-branding-still-life.jpg);">
+						style="background-image: url(../images/products/vegan1.png);">
 					</div>
 				</div>
 			</div>
@@ -546,29 +546,29 @@
 						<ul class="glide__slides">
 							<li class="glide__slide">
 								<div class="product">
-									<!-- <a href="" style="display: inline-block;"> -->
+									
 									<div class="product-img"
 										data-img-1="../images/products/Tom-Ford-RUBY-RUSH.png"
 										data-img-2="../images/products/Tom-Ford-RUBY-RUSH-2.png">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=10" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=10" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<!-- </a> -->
 									<a href="#" class="product-info">
 										<div class="product-brand">
-											<span>데오도란트</span>
+											<span>립스틱</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star-half'></i>
 											</div>
 										</div>
-										<div class="product-name">천연, 알루미늄 무함유</div>
+										<div class="product-name">생생한 색감, 보습</div>
 										<div class="product-price">
-											<del>18,388원</del>
-											<span class="main-color">14,388원</span>
+											<del>28,388원</del>
+											<span class="main-color">23,988원</span>
 										</div>
 									</a href="#">
 								</div>
@@ -576,70 +576,16 @@
 							<li class="glide__slide">
 								<div class="product">
 									<div class="product-img"
-										data-img-1="../images/products/son-gucci-505-Janet-Rust-Mat-Lipstick.png"
-										data-img-2="../images/products/son-gucci-505-Janet-Rust-Mat-Lipstick-2.png">
+										data-img-1="../images/products/vegan5.png"
+										data-img-2="../images/products/vegan4.png">
 										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
+											<a href="addToCart.jsp?itemid=11" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=11" class="btn">상세 보기</a>
 										</div>
 									</div>
 									<div class="product-info">
 										<div class="product-brand">
-											<span>샴푸</span>
-											<div class="rating">
-												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
-													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
-													class='bx bxs-star-half'></i>
-											</div>
-										</div>
-										<div class="product-name">모든 헤어 타입에 적합한 황산염 무함유</div>
-										<div class="product-price">
-											<del>27,188원</del>
-											<span class="main-color">25,188원</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="product">
-									<div class="product-img"
-										data-img-1="../images/products/son-kem-ysl-425.png"
-										data-img-2="../images/products/son-kem-ysl-425-2.png">
-										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
-										</div>
-									</div>
-									<div class="product-info">
-										<div class="product-brand">
-											<span>페이스 마스크</span>
-											<div class="rating">
-												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
-													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
-													class='bx bxs-star-half'></i>
-											</div>
-										</div>
-										<div class="product-name">차콜이 함유된 해독 효과</div>
-										<div class="product-price">
-											<del>21,188원</del>
-											<span class="main-color">19,188원</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="product">
-									<div class="product-img"
-										data-img-1="../images/products/christianlouboutin-rougelouboutin-velvet-matte.png"
-										data-img-2="../images/products/christianlouboutin-rougelouboutin-velvet-matte-1.png">
-										<div class="product-action">
-											<a href="" class="btn"> add to cart </a> <a href=""
-												class="btn"> view detail </a>
-										</div>
-									</div>
-									<div class="product-info">
-										<div class="product-brand">
-											<span>네일 폴리시</span>
+											<span>네일</span>
 											<div class="rating">
 												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
 													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
@@ -648,8 +594,62 @@
 										</div>
 										<div class="product-name">빠른 건조, 오래 지속</div>
 										<div class="product-price">
-											<del>11,788원</del>
+											<del>12,188원</del>
 											<span class="main-color">10,788원</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="product">
+									<div class="product-img"
+										data-img-1="../images/products/beautiful-eucalyptus-with-beauty-products.jpg"
+										data-img-2="../images/products/beautiful-eucalyptus-with-beauty-products (1).jpg">
+										<div class="product-action">
+											<a href="addToCart.jsp?itemid=12" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=12" class="btn">상세 보기</a>
+										</div>
+									</div>
+									<div class="product-info">
+										<div class="product-brand">
+											<span>클렌져</span>
+											<div class="rating">
+												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
+													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
+													class='bx bxs-star-half'></i>
+											</div>
+										</div>
+										<div class="product-name">민감한 피부에 적합한 보습</div>
+										<div class="product-price">
+											<del>21,188원</del>
+											<span class="main-color">20,388원</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="glide__slide">
+								<div class="product">
+									<div class="product-img"
+										data-img-1="../images/products/beautiful-eucalyptus-with-beauty-products (1).jpg"
+										data-img-2="../images/products/beautiful-eucalyptus-with-beauty-products (2).jpg">
+										<div class="product-action">
+											<a href="addToCart.jsp?itemid=13" class="btn">장바구니에 추가</a> <a
+												href="productsDetails.jsp?itemid=13" class="btn">상세 보기</a>
+										</div>
+									</div>
+									<div class="product-info">
+										<div class="product-brand">
+											<span>토너</span>
+											<div class="rating">
+												<i class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
+													class='bx bxs-star'></i> <i class='bx bxs-star'></i> <i
+													class='bx bxs-star-half'></i>
+											</div>
+										</div>
+										<div class="product-name">알코울 무함유, well-balanced</div>
+										<div class="product-price">
+											<del>22,788원</del>
+											<span class="main-color">21,588원</span>
 										</div>
 									</div>
 								</div>
@@ -709,7 +709,7 @@
 				</div>
 				<div class="col-3">
 					<div class="footer-content">
-						<div class="footer-content-header">categories</div>
+						<div class="footer-content-header">Spring collection</div>
 						<ul>
 							<li><a href="#">categories</a></li>
 							<li><a href="#">categories</a></li>
@@ -721,7 +721,7 @@
 				</div>
 				<div class="col-3">
 					<div class="footer-content">
-						<div class="footer-content-header">categories</div>
+						<div class="footer-content-header">Summer collection</div>
 						<ul>
 							<li><a href="#">categories</a></li>
 							<li><a href="#">categories</a></li>
@@ -733,7 +733,7 @@
 				</div>
 				<div class="col-3">
 					<div class="footer-content">
-						<div class="footer-content-header">categories</div>
+						<div class="footer-content-header">Winter collection</div>
 						<ul>
 							<li><a href="#">categories</a></li>
 							<li><a href="#">categories</a></li>

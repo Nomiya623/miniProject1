@@ -14,7 +14,7 @@
     try {
         String userId = request.getParameter("userId");
         String email = request.getParameter("email");
-        String password = request.getParameter("password"); // Consider hashing this for security
+        String password = request.getParameter("password"); 
         String fullName = request.getParameter("fullName");
         String ageStr = request.getParameter("age");
         int age = 0; 
