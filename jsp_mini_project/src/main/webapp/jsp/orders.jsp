@@ -9,12 +9,39 @@
     <title>주문내역</title>
     <!-- Styles -->
     <style>
-        table, th, td {
-            border: 1px solid black;
+        :root {
+            --text-color: #333;
+            --bg-color: #f5f5f5;
+            --table-border-color: #ddd;
+            --table-header-bg: #6B8E23;
+            --table-header-color: #495057;
+            --hover-bg-color: #f2f2f2;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+        table {
             border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
         }
         th, td {
-            padding: 10px;
+            border: 1px solid var(--table-border-color);
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--table-header-bg);
+            color: var(--table-header-color);
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: var(--hover-bg-color);
         }
     </style>
 </head>
