@@ -6,6 +6,58 @@
 <head>
     <meta charset="UTF-8">
     <title>제품 삭제 확인</title>
+     <style>
+        :root {
+            --main-color: #6B8E23; /* Olive Green */
+            --body-bg: #FAF9F6; /* Off White */
+            --second-bg: #FFF; /* White for a clean look */
+            --card-bg: #EFEDEA; /* A softer, lighter shade for card backgrounds */
+            --text-color: #3C3C3B; /* Almost Black */
+            --text-white: #ffffff; /* White */
+            --text-gray: #A9A9A9; /* Gray */
+            --main-hover: #556B2F; /* Dark Olive Green */
+            --border-color: #DDD; /* Light border for subtle definition */
+            --alert-color: #f44336; /* Red for alert actions */
+        }
+
+        body {
+            background-color: var(--body-bg);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: var(--second-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--main-color);
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: var(--alert-color); /* Red */
+            color: var(--text-white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: darken(var(--alert-color), 10%);
+        }
+    </style>
+    
+    
     <script>
         
         function confirmDeletion(itemid) {

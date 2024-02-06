@@ -4,6 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <title>User ID Check</title>
+    <style>
+    body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 20px;
+            font-size: 14px;
+        }
+        .message {
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 5px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .available {
+            background-color: #4CAF50; /* Green for available IDs */
+        }
+        .unavailable {
+            background-color: #f44336; /* Red for unavailable IDs */
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Blue for the button */
+            color: white;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #005f73;
+        }
+        </style>
 </head>
 <body>
     <%@ include file="../db/dbconn.jsp"%>
