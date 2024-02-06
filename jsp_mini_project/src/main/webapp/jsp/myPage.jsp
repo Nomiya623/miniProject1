@@ -105,9 +105,3 @@
 </html>
 
 
-<<<<<<< HEAD
-getParameter userId+ 
-join 	ally_purchase_history userId
-=======
-signInUp.jsp?message=잘못된+사용자+이름+또는+비밀번호입니다.to popup
->>>>>>> branch 'main' of https://github.com/Nomiya623/miniProject1.git
