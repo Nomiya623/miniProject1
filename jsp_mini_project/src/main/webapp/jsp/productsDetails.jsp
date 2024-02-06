@@ -39,6 +39,7 @@ img {
 .product-details h2, .product-details p {
 	margin: 10px 0;
 }
+
 </style>
 </head>
 <body>
@@ -73,10 +74,11 @@ img {
 					가격:
 					<%=rs.getDouble("PRICE")%>원
 				</p>
-				
-				<button onclick="addToCart()">장바구니에 추가하기</button>
-                <button onclick="checkout()">바로구매</button>
-                
+
+				<button onclick="addToCart()" class="addToCart">장바구니에 추가하기</button>
+				<button onclick="checkout()" class="checkout">바로구매</button>
+
+
 				<%
 				} else {
 				out.println("<p>해당 제품 정보를 찾을 수 없습니다.</p>");
