@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/css/sub.css" />
+
     <meta charset="UTF-8">
     <title>장바구니 추가</title>
 </head>

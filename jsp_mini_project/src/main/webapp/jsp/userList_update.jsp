@@ -21,21 +21,21 @@ try {
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Update User Information</title>
+    <title>회원정보 수정</title>
     <!-- Add your CSS here -->
 </head>
 <body>
 <% if(user != null && user.next()) { %>
-    <h2>Update User Information</h2>
+    <h2>회원정보 수정</h2>
     <form action="userUpdate_process.jsp" method="post">
         <input type="hidden" name="userId" value="<%= user.getString("USERID") %>" />
-        Email: <input type="email" name="email" value="<%= user.getString("EMAIL") %>" /><br />
-        Password: <input type="password" name="password" /><br /> 
-        Full Name: <input type="text" name="fullName" value="<%= user.getString("FULLNAME") %>" /><br />
-        Age: <input type="number" name="age" value="<%= user.getInt("AGE") %>" /><br />
-        Gender: <input type="text" name="gender" value="<%= user.getString("GENDER") %>" /><br />
-        Skin Type: <input type="text" name="skinType" value="<%= user.getString("SKINTYPE") %>" /><br />
-        <input type="submit" value="Update" />
+        이메일: <input type="email" name="email" value="<%= user.getString("EMAIL") %>" /><br />
+        비번: <input type="password" name="password" /><br /> 
+        이름: <input type="text" name="fullName" value="<%= user.getString("FULLNAME") %>" /><br />
+        나이: <input type="number" name="age" value="<%= user.getInt("AGE") %>" /><br />
+        성별: <input type="text" name="gender" value="<%= user.getString("GENDER") %>" /><br />
+        피부 타입: <input type="text" name="skinType" value="<%= user.getString("SKINTYPE") %>" /><br />
+        <input type="submit" value="수정하기" />
     </form>
 <% } else { %>
     <p>사용자를 찾을 수 없거나 사용자 ID가 누락되었습니다.</p>

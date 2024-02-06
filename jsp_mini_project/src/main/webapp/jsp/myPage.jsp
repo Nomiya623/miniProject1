@@ -5,30 +5,70 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
     <title>사용자 프로필</title>
     <style>
-        .profile-info, .action-buttons {
-            margin: 10px 0;
-        }
-        .profile-label {
-            font-weight: bold;
-        }
-        .editButton, .deleteButton {
-            padding: 5px 10px;
-            margin: 2px;
-            cursor: pointer;
-            border: none;
-            color: white;
-            border-radius: 5px;
-        }
-        .editButton {
-            background-color: #4CAF50; /* Green */
-        }
-        .deleteButton {
-            background-color: #f44336; /* Red */
-        }
-    </style>
+    :root {
+        --main-color: #6B8E23; /* Olive Green */
+        --body-bg: #FAF9F6; /* Off White */
+        --second-bg: #DAD7CD; /* Light Gray */
+        --text-color: #3C3C3B; /* Almost Black */
+        --text-white: #ffffff; /* White */
+        --text-gray: #A9A9A9; /* Gray */
+        --main-hover: #556B2F; /* Dark Olive Green */
+    }
+
+    body {
+        background-color: var(--body-bg);
+        color: var(--text-color);
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: var(--main-color);
+    }
+
+    .profile-info, .action-buttons {
+        margin: 10px 0;
+        background-color: var(--second-bg);
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .profile-label {
+        font-weight: bold;
+        color: var(--main-color);
+    }
+
+    .editButton, .deleteButton {
+        padding: 5px 10px;
+        margin: 2px;
+        cursor: pointer;
+        border: none;
+        color: var(--text-white);
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .editButton {
+        background-color: var(--main-color); /* Olive Green */
+    }
+
+    .editButton:hover {
+        background-color: var(--main-hover); /* Dark Olive Green */
+    }
+
+    .deleteButton {
+        background-color: #f44336; /* Red */
+    }
+
+    .deleteButton:hover {
+        background-color: darken(#f44336, 10%); /* Darker Red */
+    }
+</style>
+
+    
 </head>
 <body>
     <%
