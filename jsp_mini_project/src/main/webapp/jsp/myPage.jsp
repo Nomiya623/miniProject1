@@ -71,11 +71,11 @@
                         <span class="profile-label">구매 제품명:</span> <%= rs.getString("PRODUCT_TYPE") %>
                     </div>
                     <div class="profile-info">
-                        <span class="profile-label">금액:</span> <%= rs.getDouble("AMOUNT") %>
+                        <span class="profile-label">주문금액:</span> <%= rs.getDouble("AMOUNT") %>
                     </div>
                     <div class="action-buttons">
-                        <input type="button" onclick="userUpdate('<%= userId %>')" value="수정" class="editButton">
-                        <input type="button" onclick="userDelete('<%= userId %>')" value="삭제" class="deleteButton">
+                        <input type="button" onclick="userUpdate('<%= userId %>')" value="내정보 수정" class="editButton">
+                        <input type="button" onclick="userDelete('<%= userId %>')" value="회원탈퇴" class="deleteButton">
                     </div>
                     <%
                 }
