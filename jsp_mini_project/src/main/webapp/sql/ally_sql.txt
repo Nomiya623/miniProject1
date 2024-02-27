@@ -1,0 +1,48 @@
+CREATE TABLE `ALLY_PRODUCTS` (
+  `ITEMID` INT,
+  `PRODUCT_TYPE` VARCHAR(100),
+  `FEATURES` VARCHAR(400),
+  `PRICE` DECIMAL(10,2),
+  `QUANTITY` INT
+);
+
+
+CREATE TABLE `ALLY_PURCHASE_HISTORY` (
+  `PURCHASEID` INT,
+  `USERID` VARCHAR(100),
+  `ITEMID` INT,
+  `PURCHASEDATE` DATE,
+  `AMOUNT` DECIMAL(10,2)
+);
+
+CREATE TABLE `ALLY_USERS` (
+  `USERID` VARCHAR(100),
+  `EMAIL` VARCHAR(255),
+  `PASSWORD` VARCHAR(255),
+  `FULLNAME` VARCHAR(100),
+  `AGE` INT,
+  `GENDER` VARCHAR(10),
+  `SKINTYPE` VARCHAR(20),
+  `ROLE` VARCHAR(10)
+);
+
+INSERT INTO `ALLY_PRODUCTS` (`ITEMID`, `PRODUCT_TYPE`, `FEATURES`, `PRICE`, `QUANTITY`) VALUES
+(101, '핸드크림', '핸드크림 기능', 9000, 7),
+(2, '아이크림', '다크 서클 감소', 35988, 6),
+(3, '립밤', '비타민 E가 함유된 보습', 11988, 2),
+(4, '파운데이션', '완전한 커버리지, 매트 마감', 41988, 7),
+(5, '페이스 세럼', '히알루론산이 함유된 안티에이징', 59988, 9);
+
+INSERT INTO `ALLY_PURCHASE_HISTORY` (`PURCHASEID`, `USERID`, `ITEMID`, `PURCHASEDATE`, `AMOUNT`) VALUES
+(1, '96', 37, '2023-07-14', 137912),
+(2, '26', 46, '2023-02-07', 95941),
+(3, '28', 46, '2023-05-26', 74629),
+(4, '32', 29, '2023-07-01', 229911),
+(5, '10', 39, '2023-03-02', 239323);
+
+INSERT INTO `ALLY_USERS` (`USERID`, `EMAIL`, `PASSWORD`, `FULLNAME`, `AGE`, `GENDER`, `SKINTYPE`, `ROLE`) VALUES
+('2', 'user2@example.com', 'password2', 'User2 Name', 34, '남성', '건성', 'B'),
+('3', 'user3@example.com', 'password3', 'User3 Name', 28, '여성', '건성', 'B'),
+('4', 'user4@example.com', 'password4', 'User4 Name', 36, '남성', '복합성', 'B'),
+('admin', 'admin@example.com', 'admin', 'admin', 20, NULL, NULL, 'A'),
+('1', 'user1@example.com', 'password1', 'User1 Name', 23, '남성', '트러블성', 'B');
