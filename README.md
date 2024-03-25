@@ -3,13 +3,12 @@
 |------|---|---|
 |알리야|<a href="https://github.com/Nomiya623">Nomiya623</a>|
 
-<details>
 </summary>
   <img src="https://drive.google.com/file/d/1gwSDmxZNhMyjAvlwBcpQmrltddgc5-Jv/view?usp=drive_link">
   <img src="https://drive.google.com/file/d/15n1KHBMeftW8JKlAKXT9mfeDTkqz7JeT/view?usp=drive_link">
   <img src="https://drive.google.com/file/d/1XjgTovAIneHOOTE9J1kEfjJ-2zCNjl-E/view?usp=drive_link">
   <img src="https://drive.google.com/file/d/1wqbogdpbmCf6jpUB9LhaNFIvVc0av6Z1/view?usp=drive_link">
-</details>
+
 
 
 # 🛠 활용 언어
