@@ -1,7 +1,7 @@
 # miniProject1
 |이름|역할|GitHub 프로필|
 |------|---|---|
-|알리야|<a href="https://github.com/Nomiya623">Nomiya623</a>|
+|알리야|풀스택|<a href="https://github.com/Nomiya623">Nomiya623</a>|
 
 </summary>
 <img src="https://github.com/Nomiya623/miniProject1/blob/66aef1c05e37e5a15366684d883455b5fc21854e/main1.png">
