@@ -4,10 +4,10 @@
 |알리야|<a href="https://github.com/Nomiya623">Nomiya623</a>|
 
 </summary>
-  <img src="https://drive.google.com/file/d/1gwSDmxZNhMyjAvlwBcpQmrltddgc5-Jv/view?usp=drive_link">
-  <img src="https://drive.google.com/file/d/15n1KHBMeftW8JKlAKXT9mfeDTkqz7JeT/view?usp=drive_link">
-  <img src="https://drive.google.com/file/d/1XjgTovAIneHOOTE9J1kEfjJ-2zCNjl-E/view?usp=drive_link">
-  <img src="https://drive.google.com/file/d/1wqbogdpbmCf6jpUB9LhaNFIvVc0av6Z1/view?usp=drive_link">
+<img src="https://github.com/Nomiya623/miniProject1/blob/66aef1c05e37e5a15366684d883455b5fc21854e/main1.png">
+<img src="https://github.com/Nomiya623/miniProject1/blob/66aef1c05e37e5a15366684d883455b5fc21854e/main2.png">
+<img src="https://github.com/Nomiya623/miniProject1/blob/66aef1c05e37e5a15366684d883455b5fc21854e/main3.png">
+<img src="https://github.com/Nomiya623/miniProject1/blob/66aef1c05e37e5a15366684d883455b5fc21854e/cart1.png">
 
 
 
